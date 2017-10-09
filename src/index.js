@@ -98,7 +98,7 @@ class WarmUP {
       name: this.serverless.service.service + '-' + this.options.stage + '-warmup-plugin',
       schedule: ['rate(30 minutes)'],
       timeout: 10,
-      prewarm: false
+      prewarm: true
     }
 
     /** Set global custom options */
